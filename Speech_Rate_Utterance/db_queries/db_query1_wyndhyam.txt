@@ -1,0 +1,3 @@
+select * from utterances
+join callrecordings on callrecordings.callrecordinginternalid = utterances.callrecordinginternalid
+where callrecordings.corpusinternalid = 911 and transcriptionservice is not null limit 50
